@@ -1,18 +1,49 @@
-p{
+/* media queries to style for mobile */
+
+@media screen and (max-width: 700px) {
+    body, html{
+        height: 100%
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin:0;
+    }
+    .contentBox {
+        width: 95%;
+        height: 400px;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* basic page styling */
+p {
     line-height: 1.5em;
 }
 
-a > img {
-    padding:25px;
+body, html{
+    height: 100%;
 }
 
-body{
+body {
     font-size: 24px;
-    font-family: sans-serif;
+    font-family: serif;
     background-color: #f2f2f2;
     color: #262626;
 }
 
+/* proper spacing for contact icons */
+a>img {
+    padding: 25px;
+}
+
+/* nav styling */
 ul {
     list-style-type: none;
     margin: 0;
@@ -27,12 +58,16 @@ li {
     float: left;
 }
 
+nav {
+    font-family: sans-serif;
+}
+
 li a {
     font-size: 18px;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 40px;
     text-decoration: none;
 }
 
@@ -40,22 +75,15 @@ li a:hover {
     background-color: #111;
 }
 
-.container{
+/* container for content boxes(makes wrapping) */
+.container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.contentBox{
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
-    margin: 30px;
-    border-radius: 10px;
-    padding: 15px;
-}
-
+/* Name header on index */
 .namePlate {
     width: 40%;
     margin-right: 10%;
@@ -64,30 +92,67 @@ li a:hover {
     text-align: center;
 }
 
-.namePlate > h1 {
+.namePlate>h1 {
     font-size: 3em;
 }
 
-.contentBox > h1 {
+/* box container for project content */
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: .6em;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.contentBox>h1 {
     text-align: center;
     font-size: 2em;
+    font-family: serif;
 }
 
-.contentBox > a {
+.contentBox>span>a:hover {
+    background-color: #f2f2f2;
+    color: #003d99;
+    cursor: auto;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.contentBox>span>a {
+    width: 75%;
+    height: 75px;
+    border-radius: 10px;
+    border: .5px solid #333;
+    background-color: #003d99;
+    color: #f2f2f2;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: serif;
+    letter-spacing: 2px;
+    align-items: center;
     text-decoration: none;
-    color: gray;
-    font-size:1.2em;
 }
 
-.contentBox a:hover {
-    color: blue;
-}
-
-.imgContainer>img{
+/* Profile style image on index */
+.imgContainer>img {
     border-radius: 100%;
 }
 
-.imgContainer{
+.imgContainer {
     width: 30%;
     margin-top: 150px;
     float: left;
