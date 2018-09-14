@@ -149,4 +149,12 @@ span {
 .about > p {
     display: block;
     width: 80%;
+    margin-top: -5px;
+}
+
+.about > img {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin-top: 30px;
 }
