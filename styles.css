@@ -18,6 +18,14 @@ h1{
     font-size: 3em;
 }
 
+span {
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
 /* proper spacing for contact icons */
 a>img {
     padding: 25px;
@@ -98,14 +106,6 @@ li a:hover {
     cursor: auto;
 }
 
-span {
-    display: flex;
-    justify-content: center;
-    font-family: serif;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
 .contentBox>span>a {
     width: 75%;
     height: 75px;
@@ -136,7 +136,6 @@ span {
 }
 
 /* styling for about page */
-
 .about{
     display: flex;
     flex-direction: column;
